@@ -21,34 +21,51 @@ from generate_working_datasets import generate_working_datasets, save_datasets
 
 ## CUSTOMIZE THESE
 
-download = False
+downloading = False
+extracting = False
+DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
+src_file = "datasets/housing/housing.tgz"
 
-if download:  
-  DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
-  src_file_link = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
-  path_to_data_dir = os.path.join("..","datasets", "housing")
-  filename= "housing.tgz"
+DATA_ROOT_IF_NOT_DOWNLOADING = "../datasets/housing"  # CHANGE THIS AS NEEDED
+COMPRESSED_DATA_FILE_IF_NOT_DOWNLOADING = "housing.tgz"
+LABEL_LIST = ["median_house_value"]
+
+DATA_ROOT_IF_NOT_DOWNLOADING_AND_NOT_EXTRACTING = "../datasets/housing"
+CSV_FILENAME_IF_NOT_EXTRACTING = "housing.csv"
+
+## FOR THE TITANIC FILE
+DATA_ROOT_IF_NOT_DOWNLOADING_AND_NOT_EXTRACTING = "../../kaggle/titanic/datasets"
+CSV_FILENAME_IF_NOT_EXTRACTING = "train.csv"
+LABEL_LIST = ["Survived"]
+
+
+#------------- do not change below
+
+if downloading:
+  src_file_link = DOWNLOAD_ROOT + src_file
+  src_file_link_list = src_file_link.split('/')
+  path_to_data_dir = os.path.join("..",src_file_link_list[-3], src_file_link_list[-2])
+  filename= src_file_link_list[-1]  
   fetch_and_save_file(src_file_link, path_to_data_dir, filename, force = False)
+else:
+  path_to_data_dir = DATA_ROOT_IF_NOT_DOWNLOADING
+  filename= COMPRESSED_DATA_FILE_IF_NOT_DOWNLOADING
 
-if not download:
-  path_to_data_dir = os.path.join("..","datasets", "housing")
-  filename= "housing.tgz"
+if extracting:
+  tgz_dir = path_to_data_dir
+  tgz_filename = filename
+  extract_tgz(tgz_dir, tgz_filename, path_to_data_dir, force = False)
+  csv_filename = ''.join(filename.split('.')[0:-1]) + ".csv"
+else:
+  path_to_data_dir = DATA_ROOT_IF_NOT_DOWNLOADING_AND_NOT_EXTRACTING
+  csv_filename = CSV_FILENAME_IF_NOT_EXTRACTING 
 
-label_list = ["median_house_value"]
-
-## DO NOT CHANGE THESE
-tgz_dir = path_to_data_dir
-tgz_filename = filename
-extract_tgz(tgz_dir, tgz_filename, path_to_data_dir, force = False)
-
-csv_filename = ''.join(filename.split('.')[0:-1]) + ".csv"
 data = load_data_as_DataFrame_from_csv_file(path_to_data_dir, csv_filename)
 
+label_list = LABEL_LIST
 datasets_all, datasets_sample = generate_working_datasets(path_to_data_dir, csv_filename, label_list)
-
 save_datasets(path_to_data_dir, csv_filename, datasets_all, is_sample = False)
 save_datasets(path_to_data_dir, csv_filename, datasets_sample, is_sample = True)
 ##Now you will have data saved as pickle files in the directory chosen 
-
 # Just some preliminary
 prelim_explore_data(data)
