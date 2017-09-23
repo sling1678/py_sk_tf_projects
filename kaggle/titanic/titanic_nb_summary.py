@@ -8,6 +8,17 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report
 
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import GridSearchCV
+
+from sklearn.linear_model import LogisticRegressionCV
+from sklearn.svm import SVC
+from sklearn import neighbors
+from sklearn import tree
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+
+
 
 import matplotlib.pyplot as plt
 
@@ -52,10 +63,10 @@ else:
 load_pickle_data(path_to_pickle_file, is_sample)
 X_train, y_train, X_valid, y_valid, X_test, y_test = load_pickle_data(path_to_pickle_file, is_sample)
 # NOTE: THIS X_TEST IS NOT THE TEST DATA PROVIDED FOR THE PROJECT
-print(X_train.head(2))
+# print(X_train.head(2))
 
 # -------------- Check the data types of each columns
-print(X_train.dtypes)
+# print(X_train.dtypes)
 
 
 # Age         float64
@@ -227,10 +238,16 @@ class Derived_Features_Adder(BaseEstimator, TransformerMixin):
     # DROP NAME COLUMN
     X_cp = replace_cabin_name_by_single_letter(X)
     X_cp = extract_titles(X_cp)
-    X_cp = add_age_group(X_cp)
-    X_cp = replace_ticket_name_by_single_letter(X_cp)
+  #  X_cp = add_age_group(X_cp)
+  #  X_cp = replace_ticket_name_by_single_letter(X_cp)
     X_cp = add_family(X_cp)
     X_cp = X_cp.drop('Name', axis=1)
+    X_cp = X_cp.drop('Ticket', axis = 1)
+   # X_cp = X_cp.drop('Age', axis = 1)
+   # X_cp = X_cp.drop('Cabin', axis = 1)
+    X_cp = X_cp.drop('Parch', axis = 1)
+    X_cp = X_cp.drop('SibSp', axis = 1)
+    X_cp = X_cp.drop('Fare', axis=1)
     return X_cp
 
 # dfa = Derived_Features_Adder()
@@ -246,11 +263,6 @@ def list_pct_of_nans(df):
   ''' Check any NaNs in the DataFrame'''
   for col in df:
     print( col, 100*sum(pd.isnull(df[col]))/df.shape[0], '%' )
-
-
-
-# TODO: (1) Scale floats, (2) Binarize objects  - Leave ints alone
-# TODO: (3) Train and Predict
 
 def get_features_lists_of_separate_dtypes(df):
   ''' separate out features according to dtypes'''
@@ -287,98 +299,6 @@ class FloatDateScaler(BaseEstimator, TransformerMixin):
     X_scaled = X_std * (max - min) + min
     return X_scaled
 
-
-# Implement both imputer and feature adder
-
-dfi = DataFrameImputer()
-dfa = Derived_Features_Adder()
-
-#the data sets to act on
-X_train_cp = X_train.copy()
-X_valid_cp = X_valid.copy()
-X_test_cp = X_test.copy()
-
-
-# impute : fit and transform the train
-print('X_train before imputing:')
-print(X_train_cp.head(2))
-
-dfi.fit(X_train_cp)
-X_train_cp = dfi.transform(X_train_cp)
-print('X_train after imputing:')
-print(X_train_cp.head(2))
-
-# impute: transform the validation set
-print('X_valid before imputing:')
-print(X_valid_cp.head(2))
-X_valid_cp = dfi.transform(X_valid_cp)
-print('X_valid after imputing:')
-print(X_valid_cp.head(2))
-
-# impute: transform the test
-print('X_test before imputing:')
-print(X_test_cp.head(2))
-X_test_cp = dfi.transform(X_test_cp)
-print('X_test after imputing:')
-print(X_test_cp.head(2))
-
-# Derived features: fit and transform train
-
-X_train_cp = dfa.fit_transform(X_train_cp)
-print('After Derived_Features Added:')
-print(X_train_cp.head(2))
-
-# Derived features: transform validation
-X_valid_cp = dfa.transform(X_valid_cp)
-# Derived features: transform test
-X_test_cp = dfa.transform(X_test_cp)
-
-# Must impute again since adding new features sometimes also causes some new NANs
-
-print('X_train before imputing:')
-print(X_train_cp.head(2))
-
-dfi = DataFrameImputer() # new DataFrameImputer
-
-dfi.fit(X_train_cp)
-X_train_cp = dfi.transform(X_train_cp)
-print('X_train after imputing:')
-print(X_train_cp.head(2))
-
-print('X_valid before imputing:')
-print(X_valid_cp.head(2))
-X_valid_cp = dfi.transform(X_valid_cp)
-print('X_valid after imputing:')
-print(X_valid_cp.head(2))
-
-print('X_test before imputing:')
-print(X_test_cp.head(2))
-X_test_cp = dfi.transform(X_test_cp)
-print('X_test after imputing:')
-print(X_test_cp.head(2))
-
-# check for any NaNs in the data left - there should be none
-print("NANs in the data:")
-print("NaNs in train:")
-list_pct_of_nans(X_train_cp) # print statement is inside the function
-print("NaNs in validation:")
-list_pct_of_nans(X_valid_cp) # print statement is inside the function
-print("NaNs in test:")
-list_pct_of_nans(X_test_cp) # print statement is inside the function
-
-# get columns with different data type for scaling and binarizing
-floats, ints, cats = get_features_lists_of_separate_dtypes(X_train_cp)
-print('float features :', floats)
-print('int features :', ints)
-print('cat features :', cats)
-
-# print("X_train before pipeline: ")
-# print(X_train_cp.head(2))
-# X_train_prepared = perform_final_processing_of_data(X_train_cp)
-# print("X_train after pipeline: ")
-# print(X_train_prepared.head(2))
-
-
 def transform_df(df, scaler):
   '''
   Transform train, valid, and test sets according to fit of scaler by the train set alone.
@@ -394,10 +314,10 @@ def transform_df(df, scaler):
 
   df1 = pd.DataFrame(scaler.transform(df_floats), index=df_floats.index, columns=floats)
   df2 = pd.get_dummies(df_cats)
-  #print(df1[0:2])
-  #print(df2[0:2])
-  #print(df2.columns)
-  df_result = pd.concat([df1, df2, df_ints], axis = 1, join_axes=[df1.index])
+  # print(df1[0:2])
+  # print(df2[0:2])
+  # print(df2.columns)
+  df_result = pd.concat([df1, df2, df_ints], axis=1, join_axes=[df1.index])
   return df_result
 
 def match_features(df1_1, df2_1):
@@ -415,40 +335,138 @@ def match_features(df1_1, df2_1):
   set2 = set(df2.columns)
   set_to_drop = set2 - set1
   set_to_add_zeros = set1 - set2
-  #df1 = df1.drop(list(set1 - set2), axis=1)
-  #df2 = df2.drop(list(set2 - set1), axis=1)
-  #df1 = df1.loc[:, set1 & set2]
-  df2 = df2.drop(set_to_drop, axis = 1)
+  # df1 = df1.drop(list(set1 - set2), axis=1)
+  # df2 = df2.drop(list(set2 - set1), axis=1)
+  # df1 = df1.loc[:, set1 & set2]
+  df2 = df2.drop(set_to_drop, axis=1)
   for item in list(set_to_add_zeros):
     df2[item] = 0
   return df2
 
-
-def make_final_training_datasets(df_tr1, df_va1, scaler, combine_validation_with_training = True):
+def make_final_training_datasets(df_tr1, df_va1, y_tr1, y_va1, scaler, combine_validation_with_training=True):
   df_tr = df_tr1.copy()
   df_va = df_va1.copy()
+  y_tr = y_tr1.copy()
+  y_va = y_va1.copy()
 
   if combine_validation_with_training:
     df_tr = pd.concat([df_tr, df_va])
-    print('df_tr_shape = ', df_tr.shape)
+    y_tr = pd.concat([y_tr, y_va])
+    # print('df_tr_shape = ', df_tr.shape)
   floats, ints, cats = get_features_lists_of_separate_dtypes(df_tr)
   df_tr_floats = df_tr[floats]
   scaler.fit(df_tr_floats)
 
   df_tr = transform_df(df_tr, mm_scaler)
-# Take care of validation set if it is to be not part of the training set
+  # Take care of validation set if it is to be not part of the training set
   if not combine_validation_with_training:
     df_va = transform_df(df_va, mm_scaler)
-# match features
-    df_va = match_features(df_tr, df_va)
+    df_va = match_features(df_tr, df_va)  # match features in validation to training set
+
+  return df_tr, df_va, y_tr, y_va, scaler
+
+#------------------ Set up and run the program
+
+# use this to predict the test data
+DATA_ROOT = "./datasets"
+CSV_FILENAME = "test.csv"
+
+##
+path_to_data_dir = DATA_ROOT
+csv_filename = CSV_FILENAME
+csv_path = os.path.join(path_to_data_dir, csv_filename)
+test_data_to_pred = pd.read_csv(csv_path)
+
+test_data_to_pred.index = test_data_to_pred.PassengerId   ## The present data has an index for data
+test_data_to_pred = test_data_to_pred.drop('PassengerId', axis = 1)
+print(test_data_to_pred.head(2))
 
 
-  return df_tr, df_va, scaler
+# Get copies of the data sets to act on and decide what we will do with the validation set
+X_train_cp = X_train.copy()
+X_valid_cp = X_valid.copy()
+X_test_cp = X_test.copy()
+print(X_test_cp.head(2))
+y_train_cp = y_train.copy()
+y_valid_cp = y_valid.copy()
+y_test_cp = y_test.copy()
 
-# check the method above
+combine_validation_with_training = True
+# Implement both imputer and feature adder
+
+dfi = DataFrameImputer()
+dfa = Derived_Features_Adder()
+
+
+# print('X_train before imputing:')
+# print(X_train_cp.head(2))
+# print('X_valid before imputing:')
+# print(X_valid_cp.head(2))
+# print('X_test before imputing:')
+# print(X_test_cp.head(2))
+
+# fit imputer to training set
+dfi.fit(X_train_cp)
+# impute transform the train, the validation, and test sets
+X_train_cp = dfi.transform(X_train_cp)
+X_valid_cp = dfi.transform(X_valid_cp)
+X_test_cp = dfi.transform(X_test_cp)
+#
+test_data_to_pred = dfi.transform(test_data_to_pred)  ###
+# Derived features: fit
+dfa.fit(X_train_cp)
+# and transform train, validation, and test sets
+X_train_cp = dfa.transform(X_train_cp)
+X_valid_cp = dfa.transform(X_valid_cp)
+X_test_cp = dfa.transform(X_test_cp)
+
+#
+test_data_to_pred = dfa.transform(test_data_to_pred)  ###
+
+# Must impute again since adding new features sometimes also causes some new NANs
+
+dfi2 = DataFrameImputer() # new DataFrameImputer
+
+dfi2.fit(X_train_cp)
+X_train_cp = dfi2.transform(X_train_cp)
+X_valid_cp = dfi2.transform(X_valid_cp)
+X_test_cp = dfi2.transform(X_test_cp)
+
+#
+test_data_to_pred = dfi2.transform(test_data_to_pred)  ###
+
+# print('After Derived_Features Added:')
+# print('X_train after imputing:')
+# print(X_train_cp.head(2))
+# print('X_valid after imputing:')
+# print(X_valid_cp.head(2))
+# print('X_test after imputing:')
+# print(X_test_cp.head(2))
+
+# check for any NaNs in the data left - there should be none
+# print("NANs in the data:")
+# print("NaNs in train:")
+# list_pct_of_nans(X_train_cp) # print statement is inside the function
+# print("NaNs in validation:")
+# list_pct_of_nans(X_valid_cp) # print statement is inside the function
+# print("NaNs in test:")
+# list_pct_of_nans(X_test_cp) # print statement is inside the function
+
+
+
+
+
+# Scaling the float features
 mm_scaler = MinMaxScaler()
-X_train_cp, X_valid_cp, scaler_fitted = make_final_training_datasets(X_train_cp, X_valid_cp, mm_scaler, False)
+# get columns with different data type for scaling and binarizing
+floats, ints, cats = get_features_lists_of_separate_dtypes(X_train_cp)
 
+X_train_cp, X_valid_cp, y_train_cp, y_valid_cp, scaler_fitted =\
+  make_final_training_datasets(X_train_cp, X_valid_cp, y_train_cp, y_valid_cp, mm_scaler, combine_validation_with_training)
+
+# print('float features :', floats)
+# print('int features :', ints)
+# print('cat features :', cats)
 
 
 floats, ints, cats = get_features_lists_of_separate_dtypes(X_test_cp)
@@ -457,24 +475,35 @@ X_test_cp =  transform_df(X_test_cp, mm_scaler)
 X_test_cp = match_features(X_train_cp, X_test_cp)
 
 
-print('X_train features: ', X_train_cp.columns)
-print('X_valid features: ', X_valid_cp.columns)
-print('X_test features: ', X_test_cp.columns)
-print('X_train = ', X_train_cp.shape)
-print('X_valid = ', X_valid_cp.shape)
-print('X_test = ', X_test_cp.shape)
-print( X_test_cp.head(2) )
+#
+
+floats, ints, cats = get_features_lists_of_separate_dtypes(test_data_to_pred)
+test_data_to_pred =  transform_df(test_data_to_pred, mm_scaler)
+#X_test_cp = pd.DataFrame( scaler_fitted.transform(X_test_cp[floats]), index = X_test_cp.index, columns=floats )
+test_data_to_pred = match_features(X_train_cp, test_data_to_pred)
+
+
+
+# print('X_train features: ', X_train_cp.columns)
+# print('X_valid features: ', X_valid_cp.columns)
+# print('X_test features: ', X_test_cp.columns)
+# print('X_train = ', X_train_cp.shape)
+# print('X_valid = ', X_valid_cp.shape)
+# print('X_test = ', X_test_cp.shape)
+# print( X_test_cp.head(2) )
 
 
 
 # Fitting Models
-
+print('X_train_cp.columns', X_train_cp.columns)
+print('X_train_cp.shape', X_train_cp.shape)
+print('X_test_cp.shape', X_test_cp.shape)
 # Model 1 : Just predict everyone dead
 
-print('Model: Just guess 0 for every case since high probability of not surviving anyway')
-y_pred = pd.DataFrame(0, index = y_test.index, columns = y_test.columns)
-target_names = ['0', '1']
-print(classification_report(y_test, y_pred))
+# print('Model: Just guess 0 for every case since high probability of not surviving anyway')
+# y_pred = pd.DataFrame(0, index = y_test.index, columns = y_test.columns)
+# target_names = ['0', '1']
+# print(classification_report(y_test, y_pred))
 
 # Model 2 : Just count the y's in the given data and use it to predict
 print('Model: Guess 0 if random number is less than prob of 0')
@@ -490,7 +519,7 @@ print(classification_report(y_test, y_pred))
 
 #Model 3: Use Logistic Regression
 
-from sklearn.linear_model import LogisticRegression, LogisticRegressionCV
+
 
 # class sklearn.linear_model.LogisticRegression(penalty=’l2’,
 # dual=False, tol=0.0001, C=1.0, fit_intercept=True, intercept_scaling=1,
@@ -514,15 +543,105 @@ from sklearn.linear_model import LogisticRegression, LogisticRegressionCV
 # If Cs is as an int, then a grid of Cs values are chosen in a logarithmic scale
 # between 1e-4 and 1e4. Like in support vector machines, smaller values specify stronger regularization.
 
-
 print('Model: Regularized Logistic Regression with Cross Validation')
+clf = LogisticRegressionCV(Cs= 10, penalty = 'l1', solver = 'liblinear')
+y_train_cp = np.ravel(y_train_cp)
+clf.fit(X_train_cp, y_train_cp)
+#y_pred = clf.predict(X_train_cp)
+#print(classification_report(y_train_cp, y_pred))
+
+y_test_cp = np.ravel(y_test_cp)
+y_pred = clf.predict(X_test_cp)
+print(classification_report(y_test_cp, y_pred))
+
+#-----------------------
+print('Model: SVC with rbf, C = 1, gamma = auto')
+clf = SVC()
+clf.fit(X_train_cp, y_train_cp)
+y_test_cp = np.ravel(y_test_cp)
+y_pred = clf.predict(X_test_cp)
+print(classification_report(y_test_cp, y_pred))
 
 
+#--------GridSearch
+#
+# parameters = {'C': [1, 10, 100], 'gamma': [0.01, 0.001, 0.0001], 'kernel':('linear', 'rbf')}
+# svc = SVC()
+# clf = GridSearchCV(svc, parameters)
+# clf.fit(X_train_cp, y_train_cp)
+# y_test_cp = np.ravel(y_test_cp)
+# y_pred = clf.predict(X_test_cp)
+# print(classification_report(y_test_cp, y_pred))
 
 
+#-------------------
+print('Model: Nearest neighbor')
+n_neighbors = X_train_cp.shape[0] // 2
+clf = neighbors.KNeighborsClassifier(n_neighbors, weights='uniform')
+clf.fit(X_train_cp, y_train_cp)
+y_test_cp = np.ravel(y_test_cp)
+y_pred = clf.predict(X_test_cp)
+print(classification_report(y_test_cp, y_pred))
 
 
+X_train_cp_2 = pd.concat([X_train_cp, X_test_cp])
+y_train_cp_2 = np.ravel( pd.concat([pd.DataFrame(np.ravel(y_train_cp)), pd.DataFrame(np.ravel(y_test_cp))]) )
 
 
+#----------------------
+
+print('Model: DecisionTreeClassifier')
+clf = tree.DecisionTreeClassifier()
+clf.fit(X_train_cp_2, y_train_cp_2)
+y_test_cp = np.ravel(y_test_cp)
+y_pred = clf.predict(X_test_cp)
+print(classification_report(y_test_cp, y_pred))
+
+from sklearn.model_selection import cross_val_score
+scores = cross_val_score(clf, X_train_cp_2, y_train_cp_2, cv=5)
+
+print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
 
+#----------------------------
+print('Model: RandomForestClassifier')
+
+n_estimators = [ X_train_cp.shape[0],]
+X_train_cp_2 = pd.concat([X_train_cp, X_test_cp])
+y_train_cp_2 = np.ravel( pd.concat([pd.DataFrame(np.ravel(y_train_cp)), pd.DataFrame(np.ravel(y_test_cp))]) )
+for n in n_estimators:
+  clf = RandomForestClassifier(n_estimators=n)
+  clf.fit(X_train_cp_2, y_train_cp_2)
+  y_test_cp = np.ravel(y_test_cp)
+  y_pred = clf.predict(X_test_cp)
+  print(classification_report(y_test_cp, y_pred))
+
+  scores = cross_val_score(clf, X_train_cp, y_train_cp, cv=5)
+  print('n_estimators = ', n, 'CV scores are:', scores)
+  print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+
+y_pred = clf.predict(test_data_to_pred)
+PassengerId = pd.DataFrame(test_data_to_pred.index)
+print(PassengerId.head(5))
+print(y_pred)
+
+#------------------
+
+print('\nModel: GradientBoostingClassifier')
+n_estimators=int(50)
+clf = GradientBoostingClassifier(n_estimators=n_estimators, learning_rate=0.5, max_depth=1, random_state=0).fit(X_train_cp_2, y_train_cp_2)
+clf.fit(X_train_cp_2, y_train_cp_2)
+
+scores = cross_val_score(clf, X_train_cp, y_train_cp, cv=5)
+print('\nn_estimators = ', n_estimators, 'CV scores are:', scores)
+print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+
+y_pred = clf.predict(test_data_to_pred)
+PassengerId = pd.DataFrame(test_data_to_pred.index)
+print(PassengerId.head(5))
+print(y_pred)
+submission = pd.DataFrame({
+        "PassengerId": PassengerId,
+        "Survived": y_pred
+    })
+submission.to_csv('titanic_grad_boost.csv', index=False)
