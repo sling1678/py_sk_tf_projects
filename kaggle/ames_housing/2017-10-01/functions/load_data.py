@@ -17,5 +17,10 @@ def load_data(train_csvfile, test_csvfile = None, Index_column = None, Target_co
   else:
     X_train = Xy_train
 
+# Add a name attribute to the DataFrame for later reference in printing
+  X_train.name = 'X_train'
+  X_test.name = 'X_test'
+  y_train.name = 'y_test'
+
   return X_train, y_train, X_test
 

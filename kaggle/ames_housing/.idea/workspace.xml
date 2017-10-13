@@ -14,8 +14,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="646">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="e#250#327#0" expanded="true" />
               </folding>
@@ -23,16 +23,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="One_Hot_Convertor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/data_handling/One_Hot_Convertor.py">
+      <file leaf-file-name="select_features_using_SelectFromModel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2017-10-01/functions/select_features_using_SelectFromModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="110" column="3" lean-forward="false" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="40" />
+            <state relative-caret-position="228">
+              <caret line="29" column="80" lean-forward="false" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#319#470#0" expanded="true" />
-                <element signature="e#505#1890#0" expanded="true" />
-                <element signature="e#1934#2696#0" expanded="true" />
+                <element signature="e#333#930#0" expanded="true" />
+                <element signature="e#1182#1555#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,56 +40,39 @@
       <file leaf-file-name="main_2017_09_29.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2017-10-01/main_2017_09_29.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="418">
+              <caret line="22" column="58" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="22" selection-end-column="58" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#767#1099#1" expanded="true" />
-                <element signature="e#1135#1837#0" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="make_human_decision_on_datatype_of_each_column.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2017-10-01/functions/make_human_decision_on_datatype_of_each_column.py">
+      <file leaf-file-name="main_2017_10_01.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2017-10-01/main_2017_10_01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-117">
-              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="load_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2017-10-01/functions/load_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="19">
+              <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="57" />
               <folding>
-                <element signature="e#116#685#0" expanded="true" />
+                <element signature="e#72#91#0" expanded="true" />
+                <element signature="e#2443#2552#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2017-10-01/__init__.py">
+      <file leaf-file-name="main_2017_10_03.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2017-10-03/main_2017_10_03.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="read_csvfile_into_df.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/data_handling/read_csvfile_into_df.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="11" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="5" selection-end-column="11" />
               <folding>
-                <element signature="e#89#173#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#1372#1464#0" expanded="true" />
+                <element signature="e#1635#1705#0" expanded="true" />
+                <element signature="e#3458#3554#0" expanded="true" />
+                <element signature="e#6275#6371#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -131,15 +113,27 @@
         <option value="$PROJECT_DIR$/main_2017_09_29.py" />
         <option value="$PROJECT_DIR$/2017-10-01/load_data.py" />
         <option value="$PROJECT_DIR$/2017-10-01/__init__.py" />
-        <option value="$PROJECT_DIR$/2017-10-01/main_2017_09_29.py" />
         <option value="$PROJECT_DIR$/2017-10-01/functions/make_human_decision_on_datatype_of_each_column.py" />
+        <option value="$PROJECT_DIR$/2017-10-01/functions/impute_all_and_scale_num.py" />
+        <option value="$PROJECT_DIR$/2017-10-01/functions/set_datatypes.py" />
+        <option value="$PROJECT_DIR$/2017-10-01/functions/load_data.py" />
+        <option value="$PROJECT_DIR$/2017-10-01/functions/print_info_about_data.py" />
+        <option value="$PROJECT_DIR$/2017-10-01/functions/general_imputer.py" />
+        <option value="$PROJECT_DIR$/2017-10-01/functions/Categorical_Data_OneHotConvertor.py" />
+        <option value="$PROJECT_DIR$/2017-10-01/select_features_using_SelectFromModel.py" />
+        <option value="$PROJECT_DIR$/2017-10-01/functions/select_features_using_SelectFromModel.py" />
+        <option value="$PROJECT_DIR$/2017-10-01/functions/custom_error_function.py" />
+        <option value="$PROJECT_DIR$/2017-10-01/main_2017_09_29.py" />
+        <option value="$PROJECT_DIR$/2017-10-01/main_2017_10_01.py" />
+        <option value="$PROJECT_DIR$/2017-10-03/main_2017_10_03.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1359" />
-    <option name="height" value="832" />
+    <option name="x" value="35" />
+    <option name="y" value="52" />
+    <option name="width" value="1404" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -156,6 +150,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -172,19 +167,7 @@
             <path>
               <item name="ames_housing" type="b2602c69:ProjectViewProjectNode" />
               <item name="ames_housing" type="462c0819:PsiDirectoryNode" />
-              <item name="2017-10-01" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ames_housing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ames_housing" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ames_housing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ames_housing" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-              <item name="data_handling" type="462c0819:PsiDirectoryNode" />
+              <item name="2017-10-03" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ames_housing" type="b2602c69:ProjectViewProjectNode" />
@@ -194,23 +177,23 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/2017-10-01" />
-      <recent name="$PROJECT_DIR$/functions/data_handling" />
-      <recent name="$PROJECT_DIR$/../titanic" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/2017-10-01/functions" />
       <recent name="$PROJECT_DIR$/2017-10-01" />
       <recent name="$PROJECT_DIR$/functions/models" />
       <recent name="$PROJECT_DIR$/functions/data_handling" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2017-10-01/functions" />
+      <recent name="$PROJECT_DIR$/2017-10-01" />
+      <recent name="$PROJECT_DIR$/functions/data_handling" />
+      <recent name="$PROJECT_DIR$/../titanic" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -225,37 +208,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main_2017_09_29">
-    <configuration name="DictVectorizer_locally_modified" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.main_2017_10_03">
+    <configuration name="Categorical_Data_OneHotConvertor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functions/data_handling" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2017-10-01/functions" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ames_housing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions/data_handling/DictVectorizer_locally_modified.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2017-10-01/functions/Categorical_Data_OneHotConvertor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="One_Hot_Convertor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="custom_error_function" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functions/data_handling" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2017-10-01/functions" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ames_housing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions/data_handling/One_Hot_Convertor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2017-10-01/functions/custom_error_function.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -277,54 +260,54 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="make_one_hot_cols" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main_2017_10_01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functions/data_handling" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2017-10-01" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ames_housing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions/data_handling/make_one_hot_cols.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2017-10-01/main_2017_10_01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="make_one_hot_full" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main_2017_10_03" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functions/data_handling" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2017-10-03" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ames_housing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions/data_handling/make_one_hot_full.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2017-10-03/main_2017_10_03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.DictVectorizer_locally_modified" />
-      <item index="1" class="java.lang.String" itemvalue="Python.make_one_hot_full" />
-      <item index="2" class="java.lang.String" itemvalue="Python.make_one_hot_cols" />
-      <item index="3" class="java.lang.String" itemvalue="Python.One_Hot_Convertor" />
-      <item index="4" class="java.lang.String" itemvalue="Python.main_2017_09_29" />
+      <item index="0" class="java.lang.String" itemvalue="Python.main_2017_09_29" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Categorical_Data_OneHotConvertor" />
+      <item index="2" class="java.lang.String" itemvalue="Python.custom_error_function" />
+      <item index="3" class="java.lang.String" itemvalue="Python.main_2017_10_01" />
+      <item index="4" class="java.lang.String" itemvalue="Python.main_2017_10_03" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.main_2017_09_29" />
-        <item index="1" class="java.lang.String" itemvalue="Python.One_Hot_Convertor" />
-        <item index="2" class="java.lang.String" itemvalue="Python.make_one_hot_cols" />
-        <item index="3" class="java.lang.String" itemvalue="Python.make_one_hot_full" />
-        <item index="4" class="java.lang.String" itemvalue="Python.DictVectorizer_locally_modified" />
+        <item index="0" class="java.lang.String" itemvalue="Python.main_2017_10_03" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main_2017_10_01" />
+        <item index="2" class="java.lang.String" itemvalue="Python.main_2017_09_29" />
+        <item index="3" class="java.lang.String" itemvalue="Python.custom_error_function" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Categorical_Data_OneHotConvertor" />
       </list>
     </recent_temporary>
   </component>
@@ -342,13 +325,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1359" height="832" extended-state="0" />
-    <editor active="true" />
+    <frame x="35" y="52" width="1404" height="812" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18147305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17400882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48846677" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3529412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -372,10 +354,95 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="python-line">
+          <url>file://$PROJECT_DIR$/2017-10-01/main_2017_09_29.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2017-10-03/main_2017_10_03.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/2017-10-03/main_2017_10_03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#1372#1464#0" expanded="true" />
+            <element signature="e#1635#1705#0" expanded="true" />
+            <element signature="e#3458#3554#0" expanded="true" />
+            <element signature="e#6275#6371#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#250#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/select_features_using_SelectFromModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="29" column="80" lean-forward="false" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#333#930#0" expanded="true" />
+            <element signature="e#1182#1555#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/main_2017_09_29.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="22" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/main_2017_10_01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="57" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="57" />
+          <folding>
+            <element signature="e#72#91#0" expanded="true" />
+            <element signature="e#2443#2552#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-03/main_2017_10_03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3059">
+          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#1372#1464#0" expanded="true" />
+            <element signature="e#1635#1705#0" expanded="true" />
+            <element signature="e#3458#3554#0" expanded="true" />
+            <element signature="e#6275#6371#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
@@ -390,9 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="e#116#685#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -400,7 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -408,9 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="11" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#89#173#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -419,9 +479,7 @@
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#767#1099#1" expanded="true" />
-            <element signature="e#1135#1837#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -451,10 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="45" column="55" lean-forward="false" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
-          <folding>
-            <element signature="e#39#57#0" expanded="true" />
-            <element signature="e#425#977#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -489,13 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions/data_handling/print_info_about_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/data_description.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3779">
@@ -525,20 +572,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/not_used.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/data_handling/reduce_dimensions_using_PCA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-134">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -546,10 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="84" />
-          <folding>
-            <element signature="e#39#57#0" expanded="true" />
-            <element signature="e#425#977#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -557,11 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="57" />
-          <folding>
-            <element signature="e#81#207#0" expanded="true" />
-            <element signature="e#577#661#0" expanded="true" />
-            <element signature="e#701#1184#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -572,30 +600,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions/models/custom_loss_function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="74" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/data_handling/DictVectorizer_locally_modified.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-533">
           <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="166" selection-end-column="43" />
-          <folding>
-            <element signature="e#96#119#0" expanded="true" />
-            <element signature="e#467#642#0" expanded="true" />
-            <element signature="e#704#3310#1" expanded="true" />
-            <element signature="e#3435#3575#0" expanded="true" />
-            <element signature="e#3615#4612#0" expanded="true" />
-            <element signature="e#7514#8104#0" expanded="true" />
-            <element signature="e#8166#9555#0" expanded="true" />
-            <element signature="e#9593#10770#0" expanded="true" />
-            <element signature="e#10813#11067#0" expanded="true" />
-            <element signature="e#11125#12678#0" expanded="true" />
-            <element signature="e#12792#13258#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -603,10 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1506797859000" expanded="true" signature="775:942" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,9 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="11" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#89#173#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -625,27 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/load_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="e#116#685#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#250#327#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -653,32 +633,141 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="110" column="3" lean-forward="false" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/set_datatypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/data_handling/print_info_about_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/One_Hot_Convertor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/Categorical_Data_OneHotConvertor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="34" column="51" lean-forward="false" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/load_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="19" column="71" lean-forward="false" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/print_info_about_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/not_used.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#250#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/models/custom_loss_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="81" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="10" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/custom_error_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/select_features_using_SelectFromModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="29" column="80" lean-forward="false" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#319#470#0" expanded="true" />
-            <element signature="e#505#1890#0" expanded="true" />
-            <element signature="e#1934#2696#0" expanded="true" />
+            <element signature="e#333#930#0" expanded="true" />
+            <element signature="e#1182#1555#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/general_imputer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/impute_all_and_scale_num.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="44" lean-forward="true" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/ridge_sol.csv" />
     <entry file="file://$PROJECT_DIR$/2017-10-01/main_2017_09_29.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="418">
+          <caret line="22" column="58" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="22" selection-end-column="58" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#767#1099#1" expanded="true" />
-            <element signature="e#1135#1837#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2017-10-01/functions/make_human_decision_on_datatype_of_each_column.py">
+    <entry file="file://$PROJECT_DIR$/2017-10-03/main_2017_10_03.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#1372#1464#0" expanded="true" />
+            <element signature="e#1635#1705#0" expanded="true" />
+            <element signature="e#3458#3554#0" expanded="true" />
+            <element signature="e#6275#6371#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2017-10-01/main_2017_10_01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="57" />
+          <folding>
+            <element signature="e#72#91#0" expanded="true" />
+            <element signature="e#2443#2552#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

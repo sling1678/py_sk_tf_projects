@@ -14,7 +14,7 @@
       <file leaf-file-name="titanic_nb_summary.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/titanic_nb_summary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="8113">
               <caret line="647" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="647" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -47,7 +47,7 @@
       <file leaf-file-name="titanic_2017_09_22.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/titanic_2017_09_22.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3724">
+            <state relative-caret-position="644">
               <caret line="197" column="36" lean-forward="false" selection-start-line="197" selection-start-column="36" selection-end-line="197" selection-end-column="36" />
               <folding>
                 <element signature="e#10#28#0" expanded="true" />
@@ -82,7 +82,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-1675" />
     <option name="y" value="-127" />
-    <option name="width" value="1675" />
+    <option name="width" value="1441" />
     <option name="height" value="976" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -116,7 +116,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,6 +128,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,10 +225,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1675" y="-127" width="1675" height="976" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1675" y="-127" width="1441" height="976" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09124311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10936383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54370034" sideWeight="0.5021433" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -307,19 +306,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XGBoost_Titanic.py">
+    <entry file="file://$PROJECT_DIR$/titanic_nb_summary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5928">
-          <caret line="321" column="0" lean-forward="false" selection-start-line="321" selection-start-column="0" selection-end-line="325" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="8113">
+          <caret line="647" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="647" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1057#1733#0" expanded="true" />
+            <element signature="e#2910#3610#0" expanded="true" />
+            <element signature="e#4152#4351#0" expanded="true" />
+            <element signature="e#4532#5112#0" expanded="true" />
+            <element signature="e#5237#5481#0" expanded="true" />
+            <element signature="e#5688#5875#0" expanded="true" />
+            <element signature="e#6019#6103#0" expanded="true" />
+            <element signature="e#6337#6485#0" expanded="true" />
+            <element signature="e#6522#6608#0" expanded="true" />
+            <element signature="e#6648#7579#0" expanded="true" />
+            <element signature="e#7771#7889#0" expanded="true" />
+            <element signature="e#7940#8301#0" expanded="true" />
+            <element signature="e#8450#8488#0" expanded="true" />
+            <element signature="e#8522#8533#0" expanded="true" />
+            <element signature="e#8565#8602#0" expanded="true" />
+            <element signature="e#8749#8771#0" expanded="true" />
+            <element signature="e#8806#8817#0" expanded="true" />
+            <element signature="e#8858#8980#0" expanded="true" />
+            <element signature="e#9014#9607#0" expanded="true" />
+            <element signature="e#9645#10270#0" expanded="true" />
+            <element signature="e#10385#11092#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/titanic_2017_09_22.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2983">
+          <caret line="197" column="36" lean-forward="false" selection-start-line="197" selection-start-column="36" selection-end-line="197" selection-end-column="36" />
+          <folding>
+            <element signature="e#10#28#0" expanded="true" />
+            <element signature="e#1203#1783#0" expanded="true" />
+            <element signature="e#2837#2899#0" expanded="true" />
+            <element signature="e#2984#3487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/titanic_nb_summary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8113">
+          <caret line="647" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="647" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1057#1733#0" expanded="true" />
+            <element signature="e#2910#3610#0" expanded="true" />
+            <element signature="e#4152#4351#0" expanded="true" />
+            <element signature="e#4532#5112#0" expanded="true" />
+            <element signature="e#5237#5481#0" expanded="true" />
+            <element signature="e#5688#5875#0" expanded="true" />
+            <element signature="e#6019#6103#0" expanded="true" />
+            <element signature="e#6337#6485#0" expanded="true" />
+            <element signature="e#6522#6608#0" expanded="true" />
+            <element signature="e#6648#7579#0" expanded="true" />
+            <element signature="e#7771#7889#0" expanded="true" />
+            <element signature="e#7940#8301#0" expanded="true" />
+            <element signature="e#8450#8488#0" expanded="true" />
+            <element signature="e#8522#8533#0" expanded="true" />
+            <element signature="e#8565#8602#0" expanded="true" />
+            <element signature="e#8749#8771#0" expanded="true" />
+            <element signature="e#8806#8817#0" expanded="true" />
+            <element signature="e#8858#8980#0" expanded="true" />
+            <element signature="e#9014#9607#0" expanded="true" />
+            <element signature="e#9645#10270#0" expanded="true" />
+            <element signature="e#10385#11092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/titanic_2017_09_22.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2983">
+          <caret line="197" column="36" lean-forward="false" selection-start-line="197" selection-start-column="36" selection-end-line="197" selection-end-column="36" />
+          <folding>
+            <element signature="e#10#28#0" expanded="true" />
+            <element signature="e#1203#1783#0" expanded="true" />
+            <element signature="e#2837#2899#0" expanded="true" />
+            <element signature="e#2984#3487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/titanic_nb_summary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8113">
+          <caret line="647" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="647" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1057#1733#0" expanded="true" />
+            <element signature="e#2910#3610#0" expanded="true" />
+            <element signature="e#4152#4351#0" expanded="true" />
+            <element signature="e#4532#5112#0" expanded="true" />
+            <element signature="e#5237#5481#0" expanded="true" />
+            <element signature="e#5688#5875#0" expanded="true" />
+            <element signature="e#6019#6103#0" expanded="true" />
+            <element signature="e#6337#6485#0" expanded="true" />
+            <element signature="e#6522#6608#0" expanded="true" />
+            <element signature="e#6648#7579#0" expanded="true" />
+            <element signature="e#7771#7889#0" expanded="true" />
+            <element signature="e#7940#8301#0" expanded="true" />
+            <element signature="e#8450#8488#0" expanded="true" />
+            <element signature="e#8522#8533#0" expanded="true" />
+            <element signature="e#8565#8602#0" expanded="true" />
+            <element signature="e#8749#8771#0" expanded="true" />
+            <element signature="e#8806#8817#0" expanded="true" />
+            <element signature="e#8858#8980#0" expanded="true" />
+            <element signature="e#9014#9607#0" expanded="true" />
+            <element signature="e#9645#10270#0" expanded="true" />
+            <element signature="e#10385#11092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/titanic_2017_09_22.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2983">
+          <caret line="197" column="36" lean-forward="false" selection-start-line="197" selection-start-column="36" selection-end-line="197" selection-end-column="36" />
+          <folding>
+            <element signature="e#10#28#0" expanded="true" />
+            <element signature="e#1203#1783#0" expanded="true" />
+            <element signature="e#2837#2899#0" expanded="true" />
+            <element signature="e#2984#3487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XGBoost_Titanic.py" />
     <entry file="file://$PROJECT_DIR$/titanic_grad_boost.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -354,14 +477,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XGBoost_Titanic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5909">
-          <caret line="320" column="17" lean-forward="false" selection-start-line="320" selection-start-column="17" selection-end-line="320" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/XGBoost_Titanic.py" />
     <entry file="file://$PROJECT_DIR$/titanic.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -400,14 +516,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XGBoost_Titanic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/XGBoost_Titanic.py" />
     <entry file="file://$PROJECT_DIR$/titanic.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -415,14 +524,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XGBoost_Titanic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5928">
-          <caret line="321" column="0" lean-forward="false" selection-start-line="321" selection-start-column="0" selection-end-line="325" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/XGBoost_Titanic.py" />
     <entry file="file://$PROJECT_DIR$/titanic_2017_09_22.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -432,7 +534,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/titanic_nb_summary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="8113">
           <caret line="647" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="647" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -465,13 +567,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/titanic_2017_09_22.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3724">
+        <state relative-caret-position="644">
           <caret line="197" column="36" lean-forward="false" selection-start-line="197" selection-start-column="36" selection-end-line="197" selection-end-column="36" />
           <folding>
             <element signature="e#10#28#0" expanded="true" />
